@@ -26,18 +26,19 @@ export default class Library extends Component {
   renderListItem = item => {
     let borrow = "-";
     let actionName = "";
-    if (item.lender !== item.borrower) {
-      if (item.borrow !== this.state.userName) {
-        console.log("item.borrower", item.borrower);
-        if (item.borrower) {
-          actionName = ACTION_NAME.BORROW;
-          borrow = item.borrower;
-        } else {
-          actionName = ACTION_NAME.REQUEST;
-        }
+    if (item.lender === this.state.userName) {
+      if (item.borrower && item.borrower !== this.state.userName) {
+        actionName = ACTION_NAME.REQUEST;
+        borrow = item.borrower;
+      }
+    } else {
+      if (item.borrower) {
+        actionName = ACTION_NAME.REQUEST;
+        borrow = item.borrower;
+      } else {
+        actionName = ACTION_NAME.BORROW;
       }
     }
-    console.log("actionName", actionName);
     return (
       <LibraryItem
         bookName={item.name}
