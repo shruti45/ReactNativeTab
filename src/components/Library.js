@@ -17,7 +17,7 @@ export default class Library extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      userName: USER_NAME.UserB
+      userName: USER_NAME.UserA
     };
   }
   componentDidMount() {

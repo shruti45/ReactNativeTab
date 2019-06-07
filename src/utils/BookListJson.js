@@ -10,7 +10,7 @@ export const BookListJson = {
       id: 2,
       name: "Book2",
       lender: "UserB",
-      borrower: "UserC"
+      borrower: ""
     },
     {
       id: 3,
@@ -21,7 +21,7 @@ export const BookListJson = {
     {
       id: 4,
       name: "Book4",
-      lender: "UserC",
+      lender: "UserA",
       borrower: "UserB"
     },
     {
@@ -33,20 +33,20 @@ export const BookListJson = {
     {
       id: 6,
       name: "Book6",
-      lender: "UserB",
-      borrower: "UserB"
+      lender: "UserA",
+      borrower: "UserC"
     },
     {
       id: 7,
       name: "Book7",
-      lender: "UserC",
+      lender: "UserA",
       borrower: "UserB"
     },
     {
       id: 8,
       name: "Book8",
-      lender: "UserB",
-      borrower: "UserB"
+      lender: "UserA",
+      borrower: "UserD"
     }
   ]
 };
