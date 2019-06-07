@@ -8,7 +8,8 @@ const Colors = {
   GREY: "#555555",
   LIGHT_GREY: "#d3d3d3",
   DOT_COLOR: "#DE4D3B",
-  BLACK: "#000000"
+  BLACK: "#000000",
+  GREEN: "green"
 };
 
 export default Colors;
